@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Assignment Work</title>
+  </head>
+  <style>
+
+    body {
+      animation: colorchange 5s infinite alternate; /* animation-name followed by duration in seconds*/
+      /* you could also use milliseconds (ms) or something like 2.5s */
+      /* animation-duration: ; */
+      -webkit-animation: colorchange 5s infinite alternate;
+    }
+      
+   
+    @keyframes colorchange {
+      0% {
+        background: red;
+      }
+      25% {
+        background: yellow;
+      }
+      50% {
+        background: blue;
+      }
+      75% {
+        background: green;
+      }
+      100% {
+        background: red;
+      }
+    }
+   
+    @-webkit-keyframes colorchange {
+      0% {
+        background: red;
+      }
+      25% {
+        background: yellow;
+      }
+      50% {
+        background: blue;
+      }
+      75% {
+        background: green;
+      }
+      100% {
+        background: red;
+      }
+    }
+   
+     .jumbotron{
+       margin-top: 30px;
+     }
+    </style>
+   
+  <body>
+        <div class="container jumbotron">
+            
+            <h1 style="text-align:center">K J Somaiya Institute Of Engg & IT</h1><br/>
+            <div class="container">
+                <div class="">
+                   <!-- <button class="btn btn-danger btn-lg dropdown-toggle"
+                    type="button" data-toggle="dropdown">Select Algorithm</button>
+                    <div class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton">-->
+                    
+                    <select class = "form-control d-block">
+                        <option>Select Algorithm</option>
+                       <option value = "">DES with EBC Mode</option>
+                       <option value = "">DES with CBC Mode</option>
+                       <option value = "">DES with Cipher feedback mode</option>
+                       <option value = "">DES with output feedback mode</option>
+                       <option value = "">DES with counter mode</option>
+                       <option value = "">AES-128</option>
+                       <option value = "">AES-192</option>
+                       <option value = "">AES-256</option>
+                       <option value = "">IDEA</option>
+                       <option value = "">Blowfish</option>
+                        </select><br/>
+                    <label for="exampleFormControlFile1">Types of File</label><br/>
+                    <select>
+                        <option>jpeg file</option>
+                       <option value = "">image (jpeg)file using DES</option>
+                       <option value = "">image (jpeg)file using AES-128</option>
+                       <option value = "">image (jpeg)file using AES-256</option>
+                       <option value = "">image (jpeg)file using AES-192</option>
+                       <option value = "">image (jpeg)file using IDEA</option>
+                       <option value = "">image (jpeg)file using Blowfish</option>
+                       <option value = "">image file(tiff) using DES</option>
+                       <option value = "">image (jpeg)file using AES-128</option>
+                       <option value = "">image (jpeg)file using AES-192</option>
+                       <option value = "">image (jpeg)file using AES-256</option>
+                       <option value = "">image (jpeg)file using Blowfish</option>
+                       <option value = "">image (jpeg)file using Idea</option>
+                        </select>
+                
+                    <select>
+                        <option>bmp file</option>
+                       <option value = "">image file(bmp) using DES</option>
+                       <option value = "">image file(bmp) using AES-128</option>
+                       <option value = "">image file(bmp) using AES-256</option>
+                        </select>
+                        <form>
+                            <div class="form-group mt-2"><br/>
+                              <label for="exampleFormControlFile1">Upload File</label>
+                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            </div>
+                            <div class="form-group mt-2">
+                              <label for="exampleFormControlFile1">Key Size</label>
+                              <input type="text" class="form-control-file" id="exampleFormControlFile1">
+                            </div><br/><center>
+                            <button id="submit">Submit</button></center>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </body>
+</html>
